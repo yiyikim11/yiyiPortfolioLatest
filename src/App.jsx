@@ -4,18 +4,20 @@ import{About, Education} from './components';
 import Nav from './components/Nav';
 
 const App = ()=> (
-<main  >
+<main>
     <Nav/>
-    {/* <div className=' max-w-x1 space-y-6 z-10 bg-red-100'>
-    </div> */}
+    {/* big div that handle full width */}
+    <div className='flex justify-center items-center min-h-screen'>
 
-    <section className='padding'>
-      <About/>
-    </section>
+    {/* body inside this */}
+      <div className='h-min w-[60%] bg-amber-200 flex flex-col justify-center items-center  min-h-screen'>
+        <section className='padding space-y-10 gap-y-10'>
+          <About/>
+        </section>
 
-    <section className='padding'>
-      <Education/>
-    </section>
+        <section className='padding'>
+          <Education/>
+        </section>
 
     {/* <section className='padding'>
       <work experience/>
@@ -36,6 +38,10 @@ const App = ()=> (
     <section className='padding'>
       <acheivement/>
     </section> */}
+      </div>
+
+    </div>
+
   </main>
 )
   

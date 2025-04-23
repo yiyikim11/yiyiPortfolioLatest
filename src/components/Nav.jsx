@@ -36,7 +36,7 @@ const Nav = () => {
       </div>
       
       {/* Navigation controls - middle element with hover effect */}
-      <div className=" bg-black group relative flex justify-center items-center px-3 h-10 rounded-full transition-all duration-300 ease-in-out w-20 hover:w-64 overflow-hidden border border-red"
+      <div className=" bg-black group relative flex justify-center items-center px-3 h-10 rounded-full transition-all duration-300 ease-in-out w-30 hover:w-80 overflow-hidden border border-red"
            >
         {/* Left circle */}
         <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1">
@@ -44,10 +44,10 @@ const Nav = () => {
         </div>
         
         {/* Menu items that show on hover */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 flex opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-          <a href="#" style={{ color: '#FF5732' }} className=" mx-2 whitespace-nowrap hover:underline" >Work</a>
-          <a href="#" style={{ color: '#FF5732' }} className=" mx-2 whitespace-nowrap hover:underline">About</a>
-          <a href="#" style={{ color: '#FF5732' }} className=" mx-2 whitespace-nowrap hover:underline">Play</a>
+        <div className="absolute left-[40%] transform -translate-x-[40%] flex opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline" >Work</a>
+          <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline">About</a>
+          <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline">Play</a>
         </div>
         
         {/* Right circle */}
