@@ -1,9 +1,9 @@
 // import App from './App'
 import About from './About';
-import Education from './Education';
+import Body from './Body';
 
 export{
-// App, 
+// App, ah nis ot import te lmao
 About, 
-Education
+Body
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // yk all import dak knong index.js so that this file is much simpler
-import{About, Education} from './components';
+import{About, Body} from './components';
 import Nav from './components/Nav';
 
 const App = ()=> (
@@ -20,7 +20,7 @@ const App = ()=> (
         </section>
 
         <section className='padding'>
-          <Education/>
+          <Body/>
         </section>
 
     {/* <section className='padding'>
