@@ -5,11 +5,11 @@ const About = () => {
   return (
     <main>
       {/* intro section */}
-      <div className='flex flex-row w-full'>
+      <div className='flex flex-row w-full pt-5'>
         {/* the left side */}
-        <div className="w-[60%] bg-blue-400 mr-3 "> 
-          <h1 className='fond-bold'>Hi, I'm Yiyi</h1>
-          <p className='pl-1 pr-32'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut quam doloremque temporibus error consequuntur vero odio. Harum, minima alias?</p>
+        <div className="w-[60%] bg-blue-400 mr-3"> 
+          <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi</h1>
+          <p className=' pr-32'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut quam doloremque temporibus error consequuntur vero odio. Harum, minima alias?</p>
         </div>
 
         {/* right side flip card */}

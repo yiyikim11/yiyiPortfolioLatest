@@ -7,14 +7,14 @@ const App = ()=> (
 <main>
     <Nav/>
     {/* big div that handle full width */}
-    <div className='flex justify-center items-center min-h-screen'>
+    <div className='flex flex-col items-center min-h-screen'>
 
     {/* <div>
       for draggable card on the right
     </div> */}
 
     {/* content body inside this */}
-      <div className=' h-min w-[50%] bg-amber-200 flex flex-col justify-center items-center  min-h-screen'>
+      <div className='w-full  max-w-[50%] bg-amber-200'>
         <section className='padding space-y-10 gap-y-10'>
           <About/>
         </section>
