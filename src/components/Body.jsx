@@ -5,16 +5,16 @@ const Body = () => {
     <main className='flex w-full'>
       {/* education section */}
         <div className='mt-12 w-full '>
-          <h2 className='font-bold text-lg text-left w-full'>Education</h2>
+          <h2 className='font-bold text-lg text-left bg-black text-white w-24 rounded px-1 py-0.5'>Education</h2>
           {/* paragon block*/}
-          <div className='flex flex-row pt-2' >
+          <div className='mt-5 flex flex-row pt-2' >
             <img className='w-20 h-20 mr-10' src="/paragonicon.png" alt="paragonLogo" />
-            <p> Paragon International University <br />major in Computer Science</p>
+            <p> Paragon International University <br />major in Computer Science <br />rean ot ton jhop te lov sophomore </p>
             <p className='ml-auto mr-4'>2023-Present</p>
           </div>
 
           {/* e2stem block */}
-          <div className='flex flex-row pt-5' >
+          <div className='mt-5 flex flex-row pt-5' >
             <img className='w-20 h-20 mr-10' src="/e2stem1.webp" alt="e2stemLogo" />
             <p> E2Stem Education Cambodia <br />3 years high school</p>
             <p className='ml-auto mr-4'>2020 - 2023</p>
@@ -25,6 +25,8 @@ const Body = () => {
 
       {/* skill section */}
       <div>
+        <h2 className='font-bold text-lg text-left bg-black text-white w-11.5 rounded px-1 py-0.5'>Skill</h2>
+         
       </div>
       {/* my project section */}
 

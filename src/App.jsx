@@ -14,7 +14,7 @@ const App = ()=> (
     </div> */}
 
     {/* content body inside this */}
-      <div className='w-full  max-w-[50%] bg-amber-200'>
+      <div className='w-full  max-w-[50%] '>
         <section className='padding space-y-10 gap-y-10'>
           <About/>
         </section>
