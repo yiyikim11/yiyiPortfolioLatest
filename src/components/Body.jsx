@@ -165,7 +165,9 @@ const Body = () => {
           <div className='grid grid-ncols-2 md:grid:cols-2 gap-2'>
             {/* first block */}
             <div>
-              pg kit tha jek div mix
+              <img src="" alt="" />
+              <h4>Chat Collect</h4>
+              <p>Jan 2024 - Feb 2024</p>
             </div>
 
             {/* second block */}
