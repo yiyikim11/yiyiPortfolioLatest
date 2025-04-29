@@ -155,14 +155,23 @@ const Body = () => {
             </div>
 
           </div>
-         
       </div>
 
       {/* my project section */}
       <div className='mt-12 w-full'>
           <h2 className='font-bold text-lg text-left bg-black text-white w-28 rounded px-1 py-0.5'>My Projects</h2>
+          
+          {/* project block card */}
+          <div className='grid grid-ncols-2 md:grid:cols-2 gap-2'>
+            {/* first block */}
+            <div>
+              pg kit tha jek div mix
+            </div>
 
+            {/* second block */}
+            <div></div>
 
+          </div>
       </div>
       
 
