@@ -165,12 +165,58 @@ const Body = () => {
           <div className='grid grid-cols-2 gap-10 mt-5'>
             {/* first block */}
             <div className='border border-gray-300 rounded-md'>
-              <img src="/f1.jpg" alt="projectimg" className='w-full'/>
+              <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
+              {/* description of project */}
               <div className='p-3'>
-                <h2>Chat Collect</h2>
-                <p>Jan 2024 - Feb 2024</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
-                
+                <h2 className='text-xl font-bold pb-2'>F1 winner prediction</h2>
+                <p className='text-sm pb-2'>Jan 2024 - Feb 2024</p>
+                <p className='text-gray-500 pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
+                {/* languages used list */}
+                <div className='flex flex-wrap gap-2'>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Next.js</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Typescript</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">PostgreSQL</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Prisma</span>
+      
+                </div>
+                <a 
+        href="#" 
+        className="px-3 py-0.5 rounded-md w-[35%] bg-black flex items-center gap-2 mt-4 text-sm"
+      >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+  width="100"
+  height="100"
+  viewBox="0 0 256 256"
+  style={{ fill: '#FFFFFF' }}
+>
+  <g
+    fill="#ffffff"
+    fillRule="nonzero"
+    stroke="none"
+    strokeWidth="1"
+    strokeLinecap="butt"
+    strokeLinejoin="miter"
+    strokeMiterlimit="10"
+    strokeDasharray=""
+    strokeDashoffset="0"
+    fontFamily="none"
+    fontWeight="none"
+    fontSize="none"
+    textAnchor="none"
+    style={{ mixBlendMode: 'normal' }}
+  >
+    <g transform="scale(10.66667,10.66667)">
+      <path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.6,5 2.5,9.3 6.9,10.7v-2.3c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v3.3c4.1,-1.3 7,-5.1 7,-9.5c0,-6 -5.1,-10.7 -11.1,-10z" />
+    </g>
+  </g>
+</svg>
+
+        <span className='text-white'>Source</span>
+        
+                </a>
               </div>
             </div>
 
@@ -186,3 +232,4 @@ const Body = () => {
 }
 
 export default Body;
+
