@@ -8,7 +8,7 @@ const About = () => {
       <div className='flex flex-row w-full pt-10'>
         {/* the left side */}
         <div className="w-[60%] mr-3"> 
-          <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi</h1>
+          <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi 💅</h1>
           <p className=' pr-32'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut quam doloremque temporibus error consequuntur vero odio. Harum, minima alias?</p>
         </div>
 

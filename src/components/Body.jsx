@@ -162,16 +162,20 @@ const Body = () => {
           <h2 className='font-bold text-lg text-left bg-black text-white w-28 rounded px-1 py-0.5'>My Projects</h2>
           
           {/* project block card */}
-          <div className='grid grid-ncols-2 md:grid:cols-2 gap-2'>
+          <div className='grid grid-cols-2 gap-10 mt-5'>
             {/* first block */}
-            <div>
-              <img src="" alt="" />
-              <h4>Chat Collect</h4>
-              <p>Jan 2024 - Feb 2024</p>
+            <div className='border border-gray-300 rounded-md'>
+              <img src="/f1.jpg" alt="projectimg" className='w-full'/>
+              <div className='p-3'>
+                <h2>Chat Collect</h2>
+                <p>Jan 2024 - Feb 2024</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
+                
+              </div>
             </div>
 
             {/* second block */}
-            <div></div>
+            
 
           </div>
       </div>
