@@ -6,11 +6,11 @@ import Footer from './components/Footer';
 
 const App = ()=> (
 <main>
-  {/* nav bar */}
-    <Nav/>
+
     {/* big div that handle full width */}
     <div className='flex flex-col items-center min-h-screen'>
-
+  {/* nav bar */}
+    <Nav/>
     {/* <div>
       for draggable card on the right
     </div> */}
