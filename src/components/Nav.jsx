@@ -24,7 +24,7 @@ const Nav = () => {
   }, []);
   
   return (
-    <div className="flex justify-between items-center px-5 py-2 h-16 w-full sticky top-0 bg-white">
+    <div className="flex justify-between items-center px-5 py-2 h-16 w-full sticky top-0 bg-white z-50 ">
       {/* Logo */}
       <div className="flex items-center">
         <span className="text-2xl font-bold">

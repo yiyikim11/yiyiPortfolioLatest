@@ -2,9 +2,11 @@ import { useState } from 'react'
 // yk all import dak knong index.js so that this file is much simpler
 import{About, Body} from './components';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const App = ()=> (
 <main>
+  {/* nav bar */}
     <Nav/>
     {/* big div that handle full width */}
     <div className='flex flex-col items-center min-h-screen'>
@@ -45,6 +47,8 @@ const App = ()=> (
       </div>
 
     </div>
+{/* Footer section */}
+    <Footer/>
 
   </main>
 )
