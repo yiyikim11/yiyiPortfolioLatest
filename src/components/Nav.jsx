@@ -22,7 +22,7 @@ const Nav = () => {
     
     return () => clearInterval(timeInterval); // Cleanup interval on unmount
   }, []);
-  
+  // thov fix ey ke jes
   return (
     <div className="flex justify-between items-center px-5 py-2 h-16 sticky top-0 bg-white z-50 w-[50%] rounded-b-md">
       {/* Logo */}
