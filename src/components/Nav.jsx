@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
   const [currentTime, setCurrentTime] = useState('');
+  const [scrolled, setScrolled] = useState(false);
   
   useEffect(() => {
     const updateTime = () => {
@@ -20,11 +21,23 @@ const Nav = () => {
     updateTime(); // Initialize time
     const timeInterval = setInterval(updateTime, 60000); // Update every minute
     
+    // Scroll event listener
+    const handleScroll =()=> {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled){
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+
     return () => clearInterval(timeInterval); // Cleanup interval on unmount
-  }, []);
-  // thov fix ey ke jes
+    window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);
+  
   return (
-    <div className="flex justify-between items-center px-5 py-2 h-16 sticky top-0 bg-white z-50 w-[50%] rounded-b-md">
+    <div className="flex justify-between items-center px-5 py-2 h-16 sticky top-0 transition-all duration-300 ${scrolled ? 'bg-white/60 backdrop-blur-sm shadow-sm' : 'bg-transparent'} z-50 w-[50%] rounded-b-md">
       {/* Logo */}
       <div className="flex items-center">
         <span className="text-2xl font-bold">
@@ -36,7 +49,7 @@ const Nav = () => {
       </div>
       
       {/* Navigation controls - middle element with hover effect */}
-      <div className=" bg-black group relative flex justify-center items-center px-3 h-10 rounded-full transition-all duration-300 ease-in-out w-30 hover:w-80 overflow-hidden border border-red"
+      <div className=" bg-black group relative flex justify-center items-center px-2 h-10 rounded-full transition-all duration-300 ease-in-out w-30 hover:w-80 overflow-hidden border border-red"
            >
         {/* Left circle */}
         <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1">
@@ -44,8 +57,8 @@ const Nav = () => {
         </div>
         
         {/* Menu items that show on hover */}
-        <div className="absolute left-[40%] transform -translate-x-[40%] flex opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-          <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline" >Work</a>
+        <div className=" absolute left-[40%] transform -translate-x-[40%] flex opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-90">
+          <a href="#" className="!text-white mx-6 whitespace-nowrap hover:text-blue-400" >Work</a>
           <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline">About</a>
           <a href="#" style={{ color: '#73C2FB' }} className=" mx-6 whitespace-nowrap hover:underline">Play</a>
         </div>
