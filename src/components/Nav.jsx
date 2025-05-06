@@ -37,7 +37,7 @@ const Nav = () => {
   }, [scrolled]);
   
   return (
-    <div className="flex justify-between items-center px-5 py-2 h-16 sticky top-0 transition-all duration-300 ${scrolled ? 'bg-white/60 backdrop-blur-sm shadow-sm' : 'bg-transparent'} z-50 w-[50%] rounded-b-md">
+    <div className="flex justify-between top-0 items-center px-5 py-2 h-16 sticky transition-all duration-300 ${scrolled ? 'top-4 bg-white/90 backdrop-blur-sm  shadow-sm' : 'bg-transparent' } z-50 w-[50%] rounded-b-md">
       {/* Logo */}
       <div className="flex items-center">
         <span className="text-2xl font-bold">
@@ -49,7 +49,7 @@ const Nav = () => {
       </div>
       
       {/* Navigation controls - middle element with hover effect */}
-      <div className=" bg-black group relative flex justify-center items-center px-2 h-10 rounded-full transition-all duration-300 ease-in-out w-30 hover:w-80 overflow-hidden border border-red"
+      <div className=" bg-black group relative flex justify-center items-center px-2 h-10 rounded-full transition-all duration-300 ease-in-out w-30 hover:w-80 overflow-hidden"
            >
         {/* Left circle */}
         <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1">
