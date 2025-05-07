@@ -86,7 +86,8 @@ const Nav = () => {
       <div className={`nav-control bg-black group relative flex justify-center items-center px-2 h-10 rounded-full 
            transition-all duration-300 ease-in-out ${navControlWidth} overflow-hidden`}>
         {/* Left circle */}
-        <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1">
+        <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1 hover:border-4"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <span className="border-r border-b border-2 border-white w-1.5 h-1.5 transform rotate-45"></span>
         </div>
         

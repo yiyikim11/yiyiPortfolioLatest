@@ -1,5 +1,6 @@
 // rafce shortcut
 import React from 'react'
+import SwipeableCards from './SwipeableCard';
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
 
         {/* right side flip card */}
         <div className="w-[40%] ">
-          rectangle card swip2
+          <SwipeableCards/>
         </div>
         </div>
 
