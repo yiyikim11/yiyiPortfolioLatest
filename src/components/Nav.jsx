@@ -87,19 +87,19 @@ const Nav = () => {
            transition-all duration-300 ease-in-out ${navControlWidth} overflow-hidden`}>
         {/* Left circle */}
         <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1">
-          <span className="border-r border-b border-white w-1.5 h-1.5 transform rotate-45"></span>
+          <span className="border-r border-b border-2 border-white w-1.5 h-1.5 transform rotate-45"></span>
         </div>
         
         {/* Menu items - always visible at top, show on hover when scrolled */}
         <div className={`nav-menu absolute left-[40%] transform -translate-x-[40%] flex 
              transition-opacity items-center justify-center duration-300 ease-in-out ${menuVisibility}`}>
-          <a href="#" className="!text-white mx-6 whitespace-nowrap hover:text-blue-400">About</a>
-          <a href="#" className="!text-white mx-6 whitespace-nowrap hover:text-blue-400">Work</a>
-          <a href="#" className="!text-white mx-6 whitespace-nowrap hover:text-blue-400">Play</a>
+          <a href="#" className="text-[rgba(255,255,255,0.7)] mx-6 whitespace-nowrap hover:text-white">About</a> 
+          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Work</a> {/*this is work experience*/}
+          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Play</a> {/*play is blog put link to coming soon*/}
         </div>
         
         {/* Right circle */}
-        <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white ml-auto"></div>
+        <div className="flex justify-center  items-center w-5 h-5 rounded-full border border-white ml-auto"></div>
       </div>
       
       {/* Time display */}

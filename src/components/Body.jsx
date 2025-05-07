@@ -280,7 +280,7 @@ const Body = () => {
       <div className=" pt-6 text-left font-medium text-base transition-all ">
   <a
     href="/projects"
-    className="text-gray-500 hover:text-gray-700 visited:text-gray-500 inline-flex items-center"
+    className="text-gray-500 hover:text-gray-800  inline-flex items-center"
   >
     <p>View More</p>
     <span className="ml-2">

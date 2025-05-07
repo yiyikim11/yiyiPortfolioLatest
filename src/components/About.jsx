@@ -8,8 +8,8 @@ const About = () => {
       <div className='flex flex-row w-full pt-10'>
         {/* the left side */}
         <div className="w-[60%] mr-3"> 
-          <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi 💅</h1>
-          <p className=' pr-32'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aut quam doloremque temporibus error consequuntur vero odio. Harum, minima alias?</p>
+          <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi <span className='text-4xl mb-2'>✨</span> </h1>
+          <p className=' pr-32'>Developer-wanna-be based in Phnom Penh, prioritizing quality and efficiency in everything I create :D</p>
         </div>
 
         {/* right side flip card */}
@@ -21,7 +21,9 @@ const About = () => {
       {/* about section */}
       <div className='mt-15'>
         <h3 className=' mb-5 font-bold text-lg bg-black text-white w-15.5 rounded px-1 py-0.5'>About</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, tenetur ducimus. Nulla at deserunt eum quo corrupti consectetur, esse laboriosam aspernatur quod quaerat illum, ipsum cumque facilis excepturi, aperiam autem. Pariatur eius officiis vero ex! Veritatis fugiat distinctio, eius odio eaque quisquam rem ea facilis maxime sed cum officia quaerat suscipit fuga dolores dolorem, nostrum aliquid culpa ut. Asperiores maxime provident nisi quae sed quasi ab accusamus obcaecati, est harum?</p>
+        <p>I’m currently a sophomore majoring in Computer Science, with a focus on creating tech that solves real-world problems. My work spans coding, robotics, and innovative problem-solving, always keeping simplicity, efficiency, and impact at the forefront. Whether I’m developing software or designing systems, I prioritize accessibility and usability to ensure technology is practical for everyone, regardless of their background. I’m constantly exploring new ways to make tech more inclusive and to turn ideas into meaningful solutions.
+
+</p>
       </div>
     </main>
     
