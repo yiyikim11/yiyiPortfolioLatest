@@ -8,13 +8,13 @@ const About = () => {
       {/* intro section */}
       <div className='flex flex-row w-full pt-10'>
         {/* the left side */}
-        <div className="w-[60%] mr-3"> 
+        <div className="w-[60%] "> 
           <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi <span className='text-4xl mb-2'>✨</span> </h1>
-          <p className=' pr-32'>Developer-wanna-be based in Phnom Penh, prioritizing quality and efficiency in everything I create :D</p>
+          <p className=' pr-24 pt-3'>Developer-wanna-be based in Phnom Penh, prioritizing quality and efficiency in everything I create :D</p>
         </div>
 
         {/* right side flip card */}
-        <div className="w-[40%] ">
+        <div className="w-[50%] ">
           <SwipeableCards/>
         </div>
         </div>

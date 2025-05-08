@@ -2,12 +2,12 @@ import { useState, useRef } from 'react';
 
 export default function SwipeableCards() {
   const [cards, setCards] = useState([
-    { id: 1, content: '♠️ A', color: 'bg-gradient-to-br from-red-500 to-red-700' },
-    { id: 2, content: '♥️ K', color: 'bg-gradient-to-br from-blue-500 to-blue-700' },
-    { id: 3, content: '♦️ Q', color: 'bg-gradient-to-br from-green-500 to-green-700' },
-    { id: 4, content: '♣️ J', color: 'bg-gradient-to-br from-purple-500 to-purple-700' },
-    { id: 5, content: '♠️ 10', color: 'bg-gradient-to-br from-yellow-500 to-amber-600' },
-    { id: 6, content: '♥️ 9', color: 'bg-gradient-to-br from-pink-500 to-rose-700' },
+    { id: 1, image: './card/img1.jpg', color: 'bg-none' },
+    { id: 2, image: './card/img2.jpg', color: 'bg-none' },
+    { id: 3, image: './card/img3.jpg', color: 'bg-none' },
+    { id: 4, image: './card/img4.jpg', color: 'bg-none'  },
+    { id: 5, image: './card/img5.jpg', color: 'bg-none'  },
+    { id: 6, image: './card/img6.jpg', color: 'bg-none' },
   ]);
   
   const [isDragging, setIsDragging] = useState(false);
@@ -102,8 +102,8 @@ export default function SwipeableCards() {
     
     // Card staggering - we want to show more of the cards below
     // The further down the stack, the more offset
-    const xOffset = index * 30 - 15; // More pronounced horizontal offset
-    const yOffset = index * 12; // More visible vertical offset
+    const xOffset = index * 6-4; // More pronounced horizontal offset
+    const yOffset = index * 4; // More visible vertical offset
     const scaleReduction = 1 - (index * 0.05); // Less scaling to keep more visible
     const rotationDeg = index * -1.5; // Slight rotation
     
@@ -115,15 +115,13 @@ export default function SwipeableCards() {
   };
 
   return (
-    <div className="flex flex-col items-center p-8 max-w-lg mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Stacked Swipeable Cards</h2>
-      
-      <div className="w-full relative h-96 mb-8 perspective-1000">
+    <div className="flex flex-col p-4 w-50 mx-auto">
+      <div className="w-30 relative h-30  perspective-1000">
         {cards.map((card, index) => (
           <div
             key={card.id}
             ref={index === 0 ? topCardRef : null}
-            className={`absolute w-64 h-80 rounded-xl flex items-center justify-center text-white text-3xl font-bold border-2 border-white/10 backdrop-blur-sm ${card.color}`}
+            className={`absolute w-32 h-32 rounded-xl flex items-center justify-center text-white text-3xl font-bold border-2 border-white/10 backdrop-blur-sm ${card.color}`}
             style={getCardStyle(index)}
             onMouseDown={index === 0 ? handleDragStart : undefined}
             onTouchStart={index === 0 ? handleDragStart : undefined}
@@ -135,27 +133,18 @@ export default function SwipeableCards() {
             onKeyDown={index === 0 ? handleKeyDown : undefined}
             tabIndex={index === 0 ? 0 : -1}
           >
-            {card.content}
+            <img
+  src={card.image}
+  alt="Card"
+  className="w-full h-full object-cover rounded-xl"
+/>
+
           </div>
         ))}
       </div>
       
       <div className="flex gap-4">
-        <button
-          onClick={handleSwipeLeft}
-          className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition-colors duration-200"
-        >
-          Swipe Left
-        </button>
-        <button
-          onClick={handleSwipeRight}
-          className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 transition-colors duration-200"
-        >
-          Swipe Right
-        </button>
       </div>
-      
-      <p className="mt-4 text-center text-gray-600">Drag the top card left or right to swipe, or use the buttons</p>
     </div>
   );
 }
