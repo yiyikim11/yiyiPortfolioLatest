@@ -2,12 +2,13 @@ import { useState, useRef } from 'react';
 
 export default function SwipeableCards() {
   const [cards, setCards] = useState([
-    { id: 1, image: './card/img6.jpg', color: 'bg-none' },
-    { id: 2, image: './card/img1.jpg', color: 'bg-none' },
-    { id: 3, image: './card/img3.jpg', color: 'bg-none' },
-    { id: 4, image: './card/img4.jpg', color: 'bg-none'  },
-    { id: 5, image: './card/img5.jpg', color: 'bg-none'  },
-    { id: 6, image: './card/img2.jpg', color: 'bg-none' },
+    { id: 1, image: './card/yiyiKim.jpg', color: 'bg-none' },
+    { id: 2, image: './card/img5.jpg', color: 'bg-none' },
+    { id: 3, image: './card/img6.jpg', color: 'bg-none' },
+    { id: 4, image: './card/img2.jpg', color: 'bg-none'  },
+    { id: 5, image: './card/img3.jpg', color: 'bg-none'  },
+    { id: 6, image: './card/img4.jpg', color: 'bg-none' },
+    { id: 7, image: './card/img1.jpg', color: 'bg-none' },
   ]);
   
   const [isDragging, setIsDragging] = useState(false);

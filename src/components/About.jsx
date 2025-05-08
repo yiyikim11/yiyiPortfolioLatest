@@ -22,7 +22,7 @@ const About = () => {
       {/* about section */}
       <div className='mt-15'>
         <h3 className=' mb-5 font-bold text-lg bg-black text-white w-15.5 rounded px-1 py-0.5'>About</h3>
-        <p>I’m currently a sophomore majoring in Computer Science, with a focus on creating tech that solves real-world problems. My work spans coding, robotics, and innovative problem-solving, always keeping simplicity, efficiency, and impact at the forefront. Whether I’m developing software or designing systems, I prioritize accessibility and usability to ensure technology is practical for everyone, regardless of their background. I’m constantly exploring new ways to make tech more inclusive and to turn ideas into meaningful solutions.
+        <p>I’m a Computer Science sophomore with a growing interest in building tools that are both practical and well-crafted. I also enjoy sharing what I learn, which has led me to contribute to Makerspace105 and volunteer with Blocks F&D—two nonprofit initiatives offering free robotics courses to high school students.
 
 </p>
       </div>

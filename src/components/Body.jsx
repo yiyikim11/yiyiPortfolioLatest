@@ -9,18 +9,16 @@ const Body = () => {
           {/* paragon block*/}
           <div className='mt-5 flex flex-row pt-2' >
             <img className='w-20 h-20 mr-10' src="/paragonicon.png" alt="paragonLogo" />
-            <p> Paragon International University <br />major in Computer Science <br />rean ot ton jhop te lov sophomore </p>
+            <p> Paragon International University <br />Bachelor's Degree of Computer Science (BCs) </p>
             <p className='ml-auto mr-4'>2023-Present</p>
           </div>
 
           {/* e2stem block */}
-          <div className='mt-5 flex flex-row pt-5' >
-            <img className='w-20 h-20 mr-10' src="/e2stem1.webp" alt="e2stemLogo" />
-            <p> E2Stem Education Cambodia <br />3 years high school</p>
+          <div className='mt-3 flex flex-row pt-5' >
+            <img className='w-20 h-18 mr-10' src="/e2stem1.webp" alt="e2stemLogo" />
+            <p> E2Stem Education Cambodia <br />High School</p>
             <p className='ml-auto mr-4'>2020 - 2023</p>
           </div>
-
-
         </div>
 
       {/* skill section */}
