@@ -1,57 +1,35 @@
-import { useState } from 'react'
-// yk all import dak knong index.js so that this file is much simpler
-import{About, Body} from './components';
+import { About, Body } from './components';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Comingsoon from './components/Comingsoon';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const App = ()=> (
-<main>
-
-    {/* big div that handle full width */}
+const MainContent = () => (
+  <>
     <div className='flex flex-col items-center min-h-screen'>
-  {/* nav bar */}
-    <Nav/>
-    {/* <div>
-      for draggable card on the right
-    </div> */}
-
-    {/* content body inside this */}
-      <div className='w-full  max-w-[45%] '>
+      <Nav />
+      <div className='w-full max-w-[45%]'>
         <section className='padding space-y-10 gap-y-10'>
-          <About/>
+          <About />
         </section>
-
         <section className='padding'>
-          <Body/>
+          <Body />
         </section>
-
-    {/* <section className='padding'>
-      <work experience/>
-    </section>
-
-    <section className='padding'>
-      <education/>
-    </section>
-
-    <section className='padding'>
-      <skill/>
-    </section>
-
-    <section className='padding'>
-      <myproject/>
-    </section>
-
-    <section className='padding'>
-      <acheivement/>
-    </section> */}
       </div>
-
     </div>
-{/* Footer section */}
-    <Footer/>
+    <Footer />
+  </>
+);
 
+const App = () => (
+  <main>
+    <Router>
+      <Routes>
+        <Route path="/comingsoon" element={<Comingsoon />} />
+        <Route path="/" element={<MainContent />} />
+      </Routes>
+    </Router>
   </main>
-)
-  
+);
 
 export default App;
