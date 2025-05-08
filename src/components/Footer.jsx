@@ -13,7 +13,7 @@ const Footer = () => {
     src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzAxMzFsZ3A2Z2xobDU5ZDhxcWZ0MjZycWxtMGtoemZnb3V4ZzdvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xUA7bhnsHzkwUo6vtK/giphy.gif"
     alt="footerGif"
   />
-  <p className='mt-8'>© 2025 yiyikim11@gmail.com <br /> <span className='ml-9'>All rights reserved</span> </p>
+  <p className='mt-8'>© 2025 <span className='text-blue-400 underline'>yiyikim11@gmail.com</span>  <br /> <span className='ml-9'>All rights reserved</span> </p>
 </footer>
 
   )

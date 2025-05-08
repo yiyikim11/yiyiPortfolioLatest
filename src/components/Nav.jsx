@@ -95,7 +95,7 @@ const Nav = () => {
         <div className={`nav-menu absolute left-[40%] transform -translate-x-[40%] flex 
              transition-opacity items-center justify-center duration-300 ease-in-out ${menuVisibility}`}>
           <a href="#" className="text-[rgba(255,255,255,0.7)] mx-6 whitespace-nowrap hover:text-white">About</a> 
-          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Work</a> {/*this is work experience*/}
+          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Resume</a> {/*this is work experience pel tne dak chmnus work venh hz dak volunteer experience ey jg*/}
           <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Play</a> {/*play is blog put link to coming soon*/}
         </div>
         
