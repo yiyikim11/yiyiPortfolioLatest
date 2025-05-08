@@ -102,8 +102,8 @@ export default function SwipeableCards() {
     
     // Card staggering - we want to show more of the cards below
     // The further down the stack, the more offset
-    const xOffset = index * 6-4; // More pronounced horizontal offset
-    const yOffset = index * 4; // More visible vertical offset
+    const xOffset = index * 8-4; // More pronounced horizontal offset
+    const yOffset = index * 5; // More visible vertical offset
     const scaleReduction = 1 - (index * 0.05); // Less scaling to keep more visible
     const rotationDeg = index * -1.5; // Slight rotation
     
@@ -121,7 +121,7 @@ export default function SwipeableCards() {
           <div
             key={card.id}
             ref={index === 0 ? topCardRef : null}
-            className={`absolute w-32 h-32 rounded-xl flex items-center justify-center text-white text-3xl font-bold border-2 border-white/10 backdrop-blur-sm ${card.color}`}
+            className={`absolute w-48 h-48 rounded-xl  ${card.color}`}
             style={getCardStyle(index)}
             onMouseDown={index === 0 ? handleDragStart : undefined}
             onTouchStart={index === 0 ? handleDragStart : undefined}
