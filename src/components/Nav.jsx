@@ -76,7 +76,7 @@ const Nav = () => {
       <div className="flex items-center">
         <span className="text-2xl font-bold">
           {/* Using standard classes that work across Tailwind versions */}
-          <span className="text-transparent bg-clip-text" style={{
+          <span className="text-transparent bg-clip-text text-3xl" style={{
             backgroundImage: 'linear-gradient(to bottom, #4ade80, #22d3ee, #e879f9)'
           }}>Y</span>
         </span>

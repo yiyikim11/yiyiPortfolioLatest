@@ -6,7 +6,7 @@ const About = () => {
   return (
     <main>
       {/* intro section */}
-      <div className='flex flex-row w-full pt-10'>
+      <div className='flex flex-row w-full pt-14'>
         {/* the left side */}
         <div className="w-[60%] "> 
           <h1 className='m-0 p-0 fond-bold'>Hi, I'm Yiyi <span className='text-4xl mb-2'>✨</span> </h1>
