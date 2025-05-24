@@ -52,7 +52,13 @@ const Body = () => {
               </svg>
             </h3>
             <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-              2023 - <span className="inline-flex items-center  text-[#3DB5F0]"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 animate-bounce" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12v4l-4 4.5 4 4.5v4H6v-4l4-4.5L6 6V2z"></path><path d="M6 6l4 4.5L6 15v4h12v-4l-4-4.5 4-4.5V2H6v4z" fill-opacity="0.1" class="animate-pulse"></path><path d="M12 12.5L8 15h8l-4-2.5zM12 11l4-2.5H8l4 2.5z" fill-opacity="0.3"></path></svg> Present</span>
+              2023 - <span className="inline-flex items-center  text-[#3DB5F0]">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 animate-bounce" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 2h12v4l-4 4.5 4 4.5v4H6v-4l4-4.5L6 6V2z"></path>
+                        <path d="M6 6l4 4.5L6 15v4h12v-4l-4-4.5 4-4.5V2H6v4z" fill-opacity="0.1" class="animate-pulse"></path>
+                        <path d="M12 12.5L8 15h8l-4-2.5zM12 11l4-2.5H8l4 2.5z" fill-opacity="0.3"></path>
+                      </svg> Present
+                    </span>
             </div>
           </div>
           <div className="font-sans text-xs">Bachelor's Degree of Computer Science</div>

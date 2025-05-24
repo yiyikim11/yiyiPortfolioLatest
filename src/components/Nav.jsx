@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Nav = () => {
   const [currentTime, setCurrentTime] = useState('');
   const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   
   useEffect(() => {
     // Time update logic
@@ -26,6 +27,14 @@ const Nav = () => {
       const scrollPosition = window.scrollY;
       const wasScrolled = scrolled;
       const isScrolled = scrollPosition > 10;
+      
+      // Calculate scroll progress
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const maxScrollDistance = documentHeight - windowHeight;
+      const progress = maxScrollDistance > 0 ? (scrollPosition / maxScrollDistance) * 100 : 0;
+      
+      setScrollProgress(Math.min(progress, 100));
       
       // Set scroll state
       setScrolled(isScrolled);
@@ -76,31 +85,55 @@ const Nav = () => {
       <div className="flex items-center">
         <span className="text-2xl font-bold">
           {/* Using standard classes that work across Tailwind versions */}
-          <span className="text-transparent bg-clip-text text-3xl" style={{
-            backgroundImage: 'linear-gradient(to bottom, #4ade80, #22d3ee, #e879f9)'
-          }}>Y</span>
+          <span className="text-black bg-clip-text text-3xl" style={{}}>Y</span>
         </span>
       </div>
       
       {/* Navigation controls - expanded at top, hover effect when scrolled */}
-      <div className={`nav-control bg-black group relative flex justify-center items-center px-2 h-10 rounded-full 
-           transition-all duration-300 ease-in-out ${navControlWidth} overflow-hidden`}>
+      <div className={`nav-control bg-[#f3f3f3] backdrop-blur-[50px] border border-white/30 group relative flex justify-center items-center px-2 h-10 rounded-full 
+           transition-all duration-300 ease-in-out ${navControlWidth} overflow-hidden`}
+           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+           >
         {/* Left circle */}
-        <div className="flex justify-center items-center w-5 h-5 rounded-full border border-white mr-1 hover:border-4"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="flex bg-black/70 justify-center items-center w-5 h-5 rounded-full border border-white mr-1 hover:border-4"
+        >
           <span className="border-r border-b border-2 border-white w-1.5 h-1.5 transform rotate-45"></span>
         </div>
         
         {/* Menu items - always visible at top, show on hover when scrolled */}
         <div className={`nav-menu absolute left-[40%] transform -translate-x-[40%] flex 
              transition-opacity items-center justify-center duration-300 ease-in-out ${menuVisibility}`}>
-          <a href="#" className="text-[rgba(255,255,255,0.7)] mx-6 whitespace-nowrap hover:text-white">About</a> 
-          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Resume</a> {/*this is work experience pel tne dak chmnus work venh hz dak volunteer experience ey jg*/}
-          <a href="#" className="text-white/70 mx-6 whitespace-nowrap hover:text-white">Play</a> {/*play is blog put link to coming soon*/}
+          <a href="/" className="text-black/70 mx-6 whitespace-nowrap hover:text-black">About</a> 
+          <a href="/YiyiKimResume.pdf" target='_blank' rel="noopener noreferrer" className="text-black/70 mx-6 whitespace-nowrap hover:text-black">Resume</a>
+         
+          <a href="/comingsoon" className="text-black/70 mx-6 whitespace-nowrap hover:text-black">Play</a>
         </div>
+       
         
-        {/* Right circle */}
-        <div className="flex justify-center  items-center w-5 h-5 rounded-full border border-white ml-auto"></div>
+        {/* Right circle with scroll progress */}
+        <div className="relative flex justify-center items-center w-5 h-5 ml-auto">
+          {/* Background circle */}
+          <div className="absolute w-5 h-5 rounded-full border border-black/60"></div>
+          
+          {/* Progress circle using SVG */}
+          <svg className="absolute w-5 h-5 transform -rotate-90" viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="8"
+              fill="none"
+              stroke="rgba(0,0,0,0.6)"
+              strokeWidth="1"
+              strokeDasharray={`${(scrollProgress / 100) * 50.27} 50.27`}
+              className="transition-all duration-75 ease-out"
+            />
+          </svg>
+          
+          {/* Optional: Center dot to show completion */}
+          {scrollProgress > 95 && (
+            <div className="absolute w-1 h-1 bg-black/70 rounded-full"></div>
+          )}
+        </div>
       </div>
       
       {/* Time display */}
