@@ -35,7 +35,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-geist-sans);
 }
 
 h1 {

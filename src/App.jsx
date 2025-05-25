@@ -8,7 +8,7 @@ const MainContent = () => (
   <>
     <div className='flex flex-col items-center min-h-screen'>
       <Nav />
-      <div className='w-full max-w-[45%]'>
+      <div className='w-full max-w-[40%]'>
         <section className='padding space-y-10 gap-y-10'>
           <About />
         </section>

@@ -21,7 +21,7 @@ const Body = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div className="rounded-lg bg-card text-card-foreground flex mt-5">
+    <div className="rounded-lg bg-card text-card-foreground flex mt-6">
       <div className="flex-none">
         <span className="relative flex shrink-0 overflow-hidden  size-16 m-auto bg-muted-background dark:bg-foreground">
           <img
@@ -51,8 +51,8 @@ const Body = () => {
                 <path d="M9 18l6-6-6-6" />
               </svg>
             </h3>
-            <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-              2023 - <span className="inline-flex items-center  text-[#3DB5F0]">
+            <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right ">
+              2023 - <span className="inline-flex items-center  text-black ">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 animate-bounce" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M6 2h12v4l-4 4.5 4 4.5v4H6v-4l4-4.5L6 6V2z"></path>
                         <path d="M6 6l4 4.5L6 15v4h12v-4l-4-4.5 4-4.5V2H6v4z" fill-opacity="0.1" class="animate-pulse"></path>
@@ -127,13 +127,13 @@ const Body = () => {
 
       {/* skill section */}
       <div className='mt-10 w-full'>
-        <h2 className=" px-2 py-1 w-fit mb-2 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">Skill</h2>
+        <h2 className=" px-2 py-1 w-fit mb-4 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">Skill</h2>
          
         {/* the skill blocks */}
           <div className='mt-3 grid grid-ncols-2 md:grid-cols-4 gap-4'>
 
               {/* first block */}
-            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black  px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="PHP logo"
@@ -153,7 +153,7 @@ const Body = () => {
               <h3 class="text-sm text-gray-500/80 font-medium">Php</h3>
             </div>
               {/* second block */}
-            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="Laravel logo"
@@ -173,7 +173,7 @@ const Body = () => {
               <h3 class="text-sm text-gray-500/80 font-medium">Laravel</h3>
             </div>
               {/* third block */}
-              <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+              <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="React logo"
@@ -193,7 +193,7 @@ const Body = () => {
               <h3 class="text-sm text-gray-500/80 font-medium">ReactJs</h3>
             </div>
               {/* fourth */}
-            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="Figma logo"
@@ -214,7 +214,7 @@ const Body = () => {
               <h3 class="text-sm text-gray-500/80 font-medium">Figma</h3>
             </div>
               {/* fifth */}
-            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+            <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="Flutter logo"
@@ -235,7 +235,7 @@ const Body = () => {
               <h3 class="text-sm text-gray-500/80 font-medium">Flutter</h3>
             </div>
               {/* sixth */}
-             <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
+             <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-1 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
               <div className='mb-2 w-10 h-10 relative transform transition-transform duration-300 goup-hover:-translate-y-1 group-hover:scale-110 opacity-80'>
                <img 
   alt="MySQL logo"
@@ -264,25 +264,25 @@ const Body = () => {
           <h2 className=" px-2 py-1 w-fit mb-2 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">My Projects</h2>
           
           {/* project block card */}
-          <div className='grid grid-cols-2 gap-10 mt-3'>
+          <div className='grid grid-cols-2 gap-6 mt-6'>
             {/* first block */}
-            <div className='border border-gray-300 rounded-md'>
+            <div className='border border-gray-300 rounded-md hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200'>
               <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
-                <h2 className='text-xl font-bold pb-2'>F1 winner prediction</h2>
-                <p className='text-sm pb-2'>Jan 2024 - Feb 2024</p>
-                <p className='text-gray-500 pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
+                <h2 className='text-xl font-bold pb-2'>Ecological</h2>
+                <p className='text-sm pb-2'>May 2021 - Aug 2021</p>
+                <p className='text-gray-500 pb-2'>Mobile app developed at the 11th e-ICON World Contest, hosted by the Ministry of Education of the Republic of Korea (MOE), to address SDG 13: Climate Action. The app featured a comic and a mini-game to raise climate awareness.</p>
                 {/* languages used list */}
                 <div className='flex flex-wrap gap-2'>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Next.js</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Typescript</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">PostgreSQL</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Prisma</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Figma</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Flutter</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Git</span>
+              
       
                 </div>
                 <a 
-        href="#" 
+        href="https://github.com/yiyikim11/Ecological" 
         className="px-2 py-1.5 rounded-md w-[30%] bg-black flex items-center gap-2 mt-4 text-sm"
       >
         <img 
@@ -303,23 +303,23 @@ const Body = () => {
             </div>
 
             {/* second block */}
-             <div className='border border-gray-300 rounded-md relative'>
+             <div className='border border-gray-300 rounded-md relative hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200'>
               <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
-                <h2 className='text-xl font-bold pb-2'>F1 winner prediction</h2>
-                <p className='text-sm pb-2'>Jan 2024 - Feb 2024</p>
-                <p className='text-gray-500 pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
+                <h2 className='text-xl font-bold pb-2'>Yiyi's Portfolio</h2>
+                <p className='text-sm pb-2'>May 2025</p>
+                <p className='text-gray-500 pb-2'>
+                I put together a personal portfolio website that’s all about clean, modern design—because who doesn’t love things looking neat and fresh? It’s a simple, fun way to share my projects and skills without any clutter getting in the way.
+                </p>
                 {/* languages used list */}
-                <div className='flex flex-wrap gap-2'>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Next.js</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Typescript</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">PostgreSQL</span>
+                <div className='flex flex-wrap gap-2 '>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">React</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">JavaScript</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Tailwindcss</span>
               
-      
-                </div>
                 <a 
-        href="#" 
+        href="https://github.com/yiyikim11/yiyiPortfolioLatest" 
         className="absolute bottom-3 left-3 px-2 py-1.5 rounded-md w-[30%] bg-black flex items-center gap-2 mt-4 text-sm"
       >
         <img 
@@ -336,27 +336,29 @@ const Body = () => {
         <span className='text-white'>Source</span>
         
                 </a>
+      
+                </div>
               </div>
             </div>
 
             {/* third block */}
-             <div className='border border-gray-300 rounded-md'>
+             <div className='border border-gray-300 rounded-md hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0.15,0.15,0.15,0.15)] transition-all duration-200'>
               <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
-                <h2 className='text-xl font-bold pb-2'>F1 winner prediction</h2>
-                <p className='text-sm pb-2'>Jan 2024 - Feb 2024</p>
-                <p className='text-gray-500 pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem atque dicta omnis necessitatibus tempore dolorem, corporis voluptatum et. Debitis?</p>
+                <h2 className='text-xl font-bold pb-2'>Public Bus Map</h2>
+                <p className='text-sm pb-2'>Jan 2024 - Aug 2024</p>
+                <p className='text-gray-500 pb-2'>Developed a website displaying public bus schedules and routes as a Year 1 final project. The site includes an interactive map, real-time search by station or route, and a clean, responsive UI. The project aimed to improve access to public transportation information for local users.</p>
                 {/* languages used list */}
                 <div className='flex flex-wrap gap-2'>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Next.js</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Typescript</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">PostgreSQL</span>
-                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Prisma</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">HTML</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Bootstrap</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Javascript</span>
+                  <span className="text-sm px-1 py-1 rounded-md bg-gray-100 text-black font-bold">Php</span>
       
                 </div>
                 <a 
-        href="#" 
+        href="https://github.com/yiyikim11/publicTransportationWeb" 
         className="px-2 py-1.5 rounded-md w-[30%] bg-black flex items-center gap-2 mt-4 text-sm"
       >
         <img 
