@@ -1,11 +1,15 @@
-import { About, Body } from './components';
+import { About, Body, Particles } from './components';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Comingsoon from './components/Comingsoon';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+
 
 const MainContent = () => (
   <>
+  
+
     <div className='flex flex-col items-center min-h-screen'>
       <Nav />
       <div className='w-full max-w-[40%]'>
@@ -18,7 +22,7 @@ const MainContent = () => (
         </section>
       </div>
     </div>
-    
+    <Particles/>
   </>
 );
 
@@ -31,6 +35,7 @@ const App = () => (
       </Routes>
     </Router>
   </main>
+
 );
 
 export default App;

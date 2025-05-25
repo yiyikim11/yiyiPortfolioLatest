@@ -126,7 +126,7 @@ const Body = () => {
         </div>
 
       {/* skill section */}
-      <div className='mt-10 w-full'>
+      <div className='mt-8 w-full'>
         <h2 className=" px-2 py-1 w-fit mb-4 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">Skill</h2>
          
         {/* the skill blocks */}
@@ -265,9 +265,10 @@ const Body = () => {
           
           {/* project block card */}
           <div className='grid grid-cols-2 gap-6 mt-6'>
+            {/* ber host puk project dak link jorb github source */}
             {/* first block */}
-            <div className='border border-gray-300 rounded-md hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200'>
-              <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
+            <div className=' border border-gray-300 rounded-md hover:bg-gray-100 hover:-translate-y-1 shadow-[4px_4px_12px_rgba(0,0,0,0.15)]  transition-all duration-300'>
+              <img src="/ecological1.png" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
                 <h2 className='text-xl font-bold pb-2'>Ecological</h2>
@@ -303,8 +304,8 @@ const Body = () => {
             </div>
 
             {/* second block */}
-             <div className='border border-gray-300 rounded-md relative hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200'>
-              <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
+             <div className='border border-gray-300 rounded-md relative hover:bg-gray-100 hover:-translate-y-1 shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200'>
+              <img src="/yiyiportfolio.png" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
                 <h2 className='text-xl font-bold pb-2'>Yiyi's Portfolio</h2>
@@ -342,8 +343,8 @@ const Body = () => {
             </div>
 
             {/* third block */}
-             <div className='border border-gray-300 rounded-md hover:bg-gray-100 shadow-[4px_4px_12px_rgba(0.15,0.15,0.15,0.15)] transition-all duration-200'>
-              <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
+             <div className='border border-gray-300 rounded-md hover:bg-gray-100 hover:-translate-y-1 shadow-[4px_4px_12px_rgba(0.15,0.15,0.15,0.15)] transition-all duration-200'>
+              <img src="/publicbus.png" alt="projectimg" className='w-full rounded-t-md'/>
               {/* description of project */}
               <div className='p-3'>
                 <h2 className='text-xl font-bold pb-2'>Public Bus Map</h2>

@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
+ 
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
+  
 }
 
 .logo {
@@ -33,10 +33,85 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+
+
+/* Snowflake particles styles */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
 }
 
-.read-the-docs {
-  color: #888;
+.snowflake {
+  position: absolute;
+  animation: float infinite linear both;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.snowflake::after {
+  content: "❄";
+  font-size: 16px;
+  display: block;
+}
+
+.snowflake-0 {
+  color: rgba(100, 108, 255, 0.9);
+}
+
+.snowflake-0::after {
+  content: "❅";
+  font-size: 18px;
+}
+
+.snowflake-1 {
+  color: rgba(100, 108, 255, 0.7);
+}
+
+.snowflake-1::after {
+  content: "❆";
+  font-size: 14px;
+}
+
+.snowflake-2 {
+  color: rgba(100, 108, 255, 0.6);
+}
+
+.snowflake-2::after {
+  content: "❄";
+  font-size: 12px;
+}
+
+.snowflake-3 {
+  color: rgba(100, 108, 255, 0.5);
+}
+
+.snowflake-3::after {
+  content: "❅";
+  font-size: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(var(--move-y, 100px)) translateX(var(--move-x, -50px)) rotate(var(--rotation, 360deg));
+    opacity: 0;
+  }
 }
