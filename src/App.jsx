@@ -14,10 +14,11 @@ const MainContent = () => (
         </section>
         <section className='padding'>
           <Body />
+          <Footer />
         </section>
       </div>
     </div>
-    <Footer />
+    
   </>
 );
 

@@ -5,8 +5,8 @@ const Body = () => {
   return (
     <main className='flex w-full flex-col'>
       {/* education section */}
-        <div className='mt-12 w-full '>
-          <h2 className='font-bold text-lg text-left bg-black text-white w-24 rounded px-1 py-0.5'>Education</h2>
+        <div className='mt-10 w-full '>
+          <h2 className=" px-2 py-1 w-fit border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">Education</h2>
           {/* paragon block*/}
           <div
   style={{
@@ -21,7 +21,7 @@ const Body = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div className="rounded-lg bg-card text-card-foreground flex mt-10">
+    <div className="rounded-lg bg-card text-card-foreground flex mt-5">
       <div className="flex-none">
         <span className="relative flex shrink-0 overflow-hidden  size-16 m-auto bg-muted-background dark:bg-foreground">
           <img
@@ -126,11 +126,11 @@ const Body = () => {
         </div>
 
       {/* skill section */}
-      <div className='mt-12 w-full'>
-        <h2 className='font-bold text-lg text-left bg-black text-white w-11.5 rounded px-1 py-0.5 mb-5'>Skill</h2>
+      <div className='mt-10 w-full'>
+        <h2 className=" px-2 py-1 w-fit mb-2 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">Skill</h2>
          
         {/* the skill blocks */}
-          <div className='grid grid-ncols-2 md:grid-cols-4 gap-4'>
+          <div className='mt-3 grid grid-ncols-2 md:grid-cols-4 gap-4'>
 
               {/* first block */}
             <div className='tech-cursor-hover group flex flex-col items-center shadow-sm border-2 border-black px-6 py-4 bg-white rounded-md hover:bg-gray-300/80 transition-all'>
@@ -260,11 +260,11 @@ const Body = () => {
       </div>
 
       {/* my project section */}
-      <div className='mt-12 w-full'>
-          <h2 className='font-bold text-lg text-left bg-black text-white w-28 rounded px-1 py-0.5'>My Projects</h2>
+      <div className='mt-10 w-full'>
+          <h2 className=" px-2 py-1 w-fit mb-2 border-1 border-gray-200 bg-gray-100 text-gray-700 text-xs rounded-lg shadow-[2px_2px_8px_rgba(0,0,0,0.1)] hover:shadow-[4px_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200">My Projects</h2>
           
           {/* project block card */}
-          <div className='grid grid-cols-2 gap-10 mt-5'>
+          <div className='grid grid-cols-2 gap-10 mt-3'>
             {/* first block */}
             <div className='border border-gray-300 rounded-md'>
               <img src="/f1.jpg" alt="projectimg" className='w-full rounded-t-md'/>
